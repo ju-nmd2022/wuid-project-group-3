@@ -1,0 +1,192 @@
+body
+{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    height: 1024px;
+    overflow-y: scroll;
+}
+.footer
+{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    top: 2435px;/* Set specific height according to content */
+    background-color: #484848
+}
+.f
+{
+    width: 1440px;
+    height: 100px;
+    margin: 0 auto;
+}
+.footertext{
+    position: relative;
+    width: 295px;
+    height: 18px;
+    left: 90px;
+    top: -10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 17px;
+    color: #D9D9D9;
+}
+.Logotype-small
+{
+    position: relative;
+    width: 81px;
+    height: 34px;
+    top: 30px;
+}
+.contect
+{
+    position: absolute;
+    width: 100%;
+    height: 55px;
+    top: 2349px;
+}
+.c
+{
+    width: 1440px;
+    height: 55px;
+    margin: 0 auto;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 25% 12.5% 12.5% 50%; 
+    grid-template-rows: 25px 30px; 
+    grid-template-areas: 
+      "follow-us contact-us contact-us ."
+      "icons ema phonenumber ."; 
+    justify-items: stretch; 
+  }
+
+.follow-us 
+{ 
+    grid-area: follow-us; 
+    font-family: 'Inter';
+    font-style: normal;
+    /* font-weight: 500; */
+    font-size: 15px;
+    /* line-height: 24px; */
+}
+.contact-us 
+{ 
+    grid-area: contact-us; 
+    font-family: 'Inter';
+    font-style: normal;
+    /* font-weight: 500; */
+    font-size: 15px;
+    /* line-height: 24px; */
+}
+.icons 
+{ 
+    grid-area: icons; 
+    max-width:162px;
+}
+.ema 
+{ 
+    grid-area: ema; 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+}
+.phonenumber 
+{ 
+    grid-area: phonenumber; 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 29px;
+}
+.ema,.icons
+{
+    transform: translate(0px,17px);
+}
+
+/*                      */
+
+.popular
+{
+    position: absolute;
+    width: 100%;
+    height: 755px;
+    top: 1462px;
+}
+.p
+{
+    width: 1440px;
+    height: 755px;
+    margin: 0 auto;
+}
+.p-name
+{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+.p-guid
+{
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 219px 219px 219px 219px 219px 219px; 
+    grid-template-rows: 311px 365px; 
+    gap: 0em 0px; 
+    grid-template-areas: 
+      "Sognefjorden Sognefjorden Praha Praha London London"
+      "Berlin Berlin Berlin Interlaken Interlaken Interlaken"; 
+    justify-items: center; 
+    align-items: center;
+}
+.Sognefjorden 
+{ 
+    /* width: 438px;
+    height: 311px; */
+    grid-area: Sognefjorden; 
+    border-radius: 10px 0px 0px 0px;
+    background: url("Rectangle 16.jpg");
+}
+.Praha 
+{ 
+    /* width: 438px;
+    height: 311px; */
+    grid-area: Praha; 
+    background: url("Rectangle 17.jpg");
+}
+.London 
+{ 
+    /
+    grid-area: London; 
+    border-radius: 0px 10px 0px 0px;
+    background: url("Rectangle 18.jpg");
+}
+.Berlin 
+{ 
+    /* width: 658px;
+    height: 365px; */
+    grid-area: Berlin; 
+    border-radius: 0px 0px 0px 10px;
+    background: url("Rectangle 19.jpg");
+}
+.Interlaken 
+{ 
+    /* width: 658px;
+    height: 365px; */
+    grid-area: Interlaken; 
+    border-radius: 0px 0px 10px 0px;
+    background: url("Rectangle 20.jpg");
+}
+.p-photo
+{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+}
