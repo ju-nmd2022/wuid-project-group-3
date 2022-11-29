@@ -248,3 +248,87 @@ nav {
     visibility: visible;
   }
 }
+/* footer */
+
+footer {
+  width: 100%;
+  height: 100px;
+  background: #444444;
+  /* I don't not why I can not set background  */
+}
+
+.f {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.Logotype-small{
+  max-width: 100px;
+}
+/* contect */
+.contect{
+    width: 100%;
+    height: 55px;
+}
+.c{
+  max-width: 1280px;
+  height: 55px;
+  margin: 0 auto;
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 25% 12.5% 12.5% 50%; 
+  grid-template-rows: 25px 50px; 
+  grid-template-areas: 
+    "follow-us contact-us contact-us ."
+    "icons ema phonenumber ."; 
+  justify-items: stretch; 
+}
+.follow-us 
+{ 
+    grid-area: follow-us; 
+    font-family: 'Inter';
+    font-style: normal;
+    /* font-weight: 500; */
+    font-size: 15px;
+    /* line-height: 24px; */
+}
+.contact-us 
+{ 
+    grid-area: contact-us; 
+    font-family: 'Inter';
+    font-style: normal;
+    /* font-weight: 500; */
+    font-size: 15px;
+    /* line-height: 24px; */
+}
+.icons 
+{ 
+    grid-area: icons; 
+    max-width:162px;
+}
+.ema 
+{ 
+    grid-area: ema; 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+}
+.phonenumber 
+{ 
+    grid-area: phonenumber; 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 29px;
+}
+.ema,.icons,.phonenumber 
+{
+    transform: translate(0px,17px);
+}
