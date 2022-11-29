@@ -154,6 +154,13 @@ nav {
   height: 30px;
   cursor: pointer;
 }
+.top-3 {
+  margin-left: 90px;
+  margin-top: -170px;
+  position: absolute;
+  color: #eeeeee;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
 /*Area where pictures and text below big picture */
 .grey-area {
   width: 100%;
