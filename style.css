@@ -292,18 +292,14 @@ footer {
     grid-area: follow-us; 
     font-family: 'Inter';
     font-style: normal;
-    /* font-weight: 500; */
     font-size: 15px;
-    /* line-height: 24px; */
 }
 .contact-us 
 { 
     grid-area: contact-us; 
     font-family: 'Inter';
     font-style: normal;
-    /* font-weight: 500; */
     font-size: 15px;
-    /* line-height: 24px; */
 }
 .icons 
 { 

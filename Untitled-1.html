@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta
-      charest="utf-8"
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>My work</title>
+    <meta charest="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mainpage</title>
     <link rel="stylesheet" type="text/css" href="mainpage.css" />
     <style lang="scss" scoped></style>
   </head>
@@ -24,7 +22,7 @@
         <div class="menu">
           <a href="#">Travel Guide</a>
           <a href="#">Resturants</a>
-          <a href="index.html">Hotels</a>
+          <a href="#" class="is-active">Hotels</a>
           <a href="#">Tickets</a>
           <a href="#">Car rental</a>
         </div>
@@ -38,21 +36,42 @@
       </div>
     </nav>
 
+    <!-- Scrolling-images -->
+    
+    <div class="Scrolling-images">
+        <img src="Group 2.png" alt="" class="cities">
+      <form action="" class="search-bar">
+        <input type="text" name="q" />
+        <button type="submit">
+          <img class="search" src="search.png" alt="searchicon" />
+        </button>
+      </form>
+    </div>
+   
+   
+    <br />
+    <br />
+    
     <!-- popular -->
     <div class="popular">
-      <div class="p">
         <p class="p-name">Popular destinations in Europe</p>
-        <br />
-        <div class="p-guid">
-          <div class="Sognefjorden"><p class="p-photo">Sognefjorden</p></div>
-          <div class="Praha"><p class="p-photo">Praha</p></div>
-          <div class="London"><p class="p-photo">London</p></div>
-          <div class="Berlin"><p class="p-photo">Berlin</p></div>
-          <div class="Interlaken"><p class="p-photo">Interlaken</p></div>
+        <br>
+        <br>
+        <div class="p">
+          <div class="p-guid">
+            <div class="Sognefjorden"><p class="p-photo">Sognefjorden</p></div>
+            <div class="Praha"><p class="p-photo">Praha</p></div>
+            <div class="London"><p class="p-photo">London</p></div>
+            <div class="Berlin"><p class="p-photo">Berlin</p></div>
+            <div class="Interlaken"><p class="p-photo">Interlaken</p></div>
+          </div>
         </div>
-      </div>
-    </div>
-    <!-- footer -->
+    </div>  
+      <br>
+      <br>
+      <br>
+    <br>
+    <br>
     <div class="contect">
       <div class="c">
         <p class="follow-us">Follow us</p>
@@ -62,16 +81,19 @@
         <img src="icons.png" alt="icons" class="icons" />
       </div>
     </div>
+    <br>
+    <br>
+    <br>
     <div class="footer">
       <div class="f">
         <img
-          src="Logotype-small.png"
+          src="logo-2.png"
           alt="Logotype-small"
           class="Logotype-small"
         />
         <p class="footertext">© 2022 Guidewide All rights reserved.</p>
       </div>
     </div>
-    <script src="main.js" defer></script>
+    <script src="main.js"></script>
   </body>
 </html>
