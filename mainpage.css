@@ -33,12 +33,12 @@ body
     line-height: 17px;
     color: #D9D9D9;
 }
-.Logotype-small
+.logotype-small
 {
     position: relative;
-    width: 81px;
-    height: 34px;
-    top: 30px;
+    width: 60px;
+    margin-left: 30px;
+    margin-top: 10px;
 }
 .contect
 {

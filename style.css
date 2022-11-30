@@ -250,11 +250,13 @@ nav {
 }
 /* footer */
 
-footer {
+.footer {
   width: 100%;
-  height: 100px;
-  background: #444444;
-  /* I don't not why I can not set background  */
+  height: 50px;
+  background: var(--dark);
+}
+.footer-text {
+  color: #ffffff;
 }
 
 .f {
@@ -266,69 +268,67 @@ footer {
   justify-content: flex-start;
 }
 
-.Logotype-small{
-  max-width: 100px;
+.logotype-small {
+  max-width: 60px;
+  margin-top: 10px;
+  margin-left: 30px;
 }
 /* contect */
-.contect{
-    width: 100%;
-    height: 55px;
+.contect {
+  width: 100%;
+  height: 55px;
 }
-.c{
+.c {
   max-width: 1280px;
   height: 55px;
   margin: 0 auto;
-  display: grid; 
-  grid-auto-columns: 1fr; 
-  grid-template-columns: 25% 12.5% 12.5% 50%; 
-  grid-template-rows: 25px 50px; 
-  grid-template-areas: 
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 25% 12.5% 12.5% 50%;
+  grid-template-rows: 25px 50px;
+  grid-template-areas:
     "follow-us contact-us contact-us ."
-    "icons ema phonenumber ."; 
-  justify-items: stretch; 
+    "icons ema phonenumber .";
+  justify-items: stretch;
 }
-.follow-us 
-{ 
-    grid-area: follow-us; 
-    font-family: 'Inter';
-    font-style: normal;
-    /* font-weight: 500; */
-    font-size: 15px;
-    /* line-height: 24px; */
+.follow-us {
+  grid-area: follow-us;
+  font-family: "Inter";
+  font-style: normal;
+  /* font-weight: 500; */
+  font-size: 15px;
+  /* line-height: 24px; */
 }
-.contact-us 
-{ 
-    grid-area: contact-us; 
-    font-family: 'Inter';
-    font-style: normal;
-    /* font-weight: 500; */
-    font-size: 15px;
-    /* line-height: 24px; */
+.contact-us {
+  grid-area: contact-us;
+  font-family: "Inter";
+  font-style: normal;
+  /* font-weight: 500; */
+  font-size: 15px;
+  /* line-height: 24px; */
 }
-.icons 
-{ 
-    grid-area: icons; 
-    max-width:162px;
+.icons {
+  grid-area: icons;
+  max-width: 162px;
 }
-.ema 
-{ 
-    grid-area: ema; 
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
+.ema {
+  grid-area: ema;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
 }
-.phonenumber 
-{ 
-    grid-area: phonenumber; 
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 29px;
+.phonenumber {
+  grid-area: phonenumber;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 29px;
 }
-.ema,.icons,.phonenumber 
-{
-    transform: translate(0px,17px);
+.ema,
+.icons,
+.phonenumber {
+  transform: translate(0px, 17px);
 }
