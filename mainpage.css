@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 body
 {
     position: relative;
@@ -189,6 +191,7 @@ body
     font-size: 40px;
     line-height: 48px;
 }
+>>>>>>> 14fe609f435443db5be80277ffaf042b148bdc26
 :root {
     --primary: #d88921;
     --light: #eeeeee;
@@ -302,6 +305,98 @@ body
   .hamburger.is-active:hover span {
     background-color: var(--primary);
   }
+  /* Berlin picture with properties */
+  .Scrolling-images {
+    width: 100%;
+    min-height: 810px;
+    /* padding: 5%; */
+    /* z-index: -1; */
+    
+                                
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .city{
+    /* position: absolute; */
+    /* width: 4320px; */
+    /* height: 810px; */
+    overscroll-behavior-inline: contain;
+  }
+  /*search bar properties to fit image of berlin*/
+  .search-bar {
+    z-index: 1;
+    width: 100%;
+    max-width: 600px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.6);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+
+  }
+  /*search-bar input field style to fit */
+  .search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+
+  }
+  /*img in search-bar*/
+  .search-bar button img {
+    width: 20px;
+  }
+  .search-bar button {
+    border-radius: 50%;
+    border: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  .top-3 {
+    margin-left: 90px;
+    margin-top: -170px;
+    position: absolute;
+    color: #eeeeee;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  
+  /*Scroll for pictures*/
+  
+  .media-scroller {
+    display: grid;
+    gap: var(--spacer);
+    grid-auto-flow: column;
+    grid-auto-columns: 30%;
+  
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    padding: 0 var(--spacer) var(--spacer);
+  }
+  .media-element {
+    display: grid;
+    grid-template-rows: min-content;
+    gap: var(--spacer);
+    padding: var(--spacer);
+    background: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 2px 2px #eeeeee;
+  }
+  .media-element > img {
+    inline-size: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+  
+  /*Paragraph in hotel*/
+  .media-element > p {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    text-align: center;
+  }
   
   /*At what pixels will the hamburger show up */
   @media (min-width: 880px) {
@@ -323,3 +418,178 @@ body
       visibility: visible;
     }
   }
+  /* footer */
+  
+  footer {
+    width: 100%;
+    height: 100px;
+    background: #444444;
+    /* I don't not why I can not set background  */
+  }
+  
+  .f {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .Logotype-small{
+    max-width: 100px;
+  }
+  /* popular */
+  .popular{
+    width: 100%;
+    height: 755px;
+  }
+  .p-name ,.p {
+    max-width: 1280px;
+    margin: 0 auto;
+  }  
+  .p-name{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  
+  .p-guid { 
+    height: 750px;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 0.8fr 1.2fr; 
+    gap: 5px 5px; 
+    grid-template-areas: 
+      "Sognefjorden Sognefjorden Praha Praha London London"
+      "Berlin Berlin Berlin Interlaken Interlaken Interlaken"; 
+    /* justify-content: center; 
+    align-content: center; */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 51px;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+.Sognefjorden { 
+grid-area: Sognefjorden; 
+background-image: url('Rectangle 16.jpg');
+background-position: center;
+background-size: cover;
+border-radius: 10px 0px 0px 0px;
+}
+.Praha { 
+grid-area: Praha; 
+background-image: url('Rectangle 17.jpg');
+background-position: center;
+background-size: cover;
+}
+.London { 
+grid-area: London; 
+background-image: url('Rectangle\ 18.png');
+background-position: center;
+background-size: cover;
+border-radius: 0px 10px 0px 0px;
+}
+.Berlin { 
+grid-area: Berlin; 
+background-image: url('Rectangle\ 19.png');
+background-position: center;
+background-size: cover;
+border-radius: 0px 0px 0px 10px;
+}
+.Interlaken { 
+grid-area: Interlaken; 
+background-image: url('Rectangle\ 20.png');
+background-position: center;
+background-size: cover;
+border-radius: 0px 0px 10px 0px;
+}
+/* footer */
+
+.footer {
+width: 100%;
+height: 200px;
+background: var(--dark);
+}
+.footer-text {
+color: #ffffff;
+}
+
+.f {
+max-width: 1350px;
+margin: 0 auto;
+display: flex;
+gap: 50px;
+align-items: center;
+justify-content: flex-start;
+}
+
+.logotype-small {
+max-width: 60px;
+margin-top: 10px;
+margin-left: 30px;
+}
+/* contect */
+.contect {
+width: 100%;
+height: 55px;
+}
+.c {
+max-width: 1280px;
+height: 55px;
+margin: 0 auto;
+display: grid;
+grid-auto-columns: 1fr;
+grid-template-columns: 25% 12.5% 12.5% 50%;
+grid-template-rows: 25px 50px;
+grid-template-areas:
+    "follow-us contact-us contact-us ."
+    "icons ema phonenumber .";
+justify-items: stretch;
+}
+.follow-us 
+{ 
+    grid-area: follow-us; 
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 15px;
+}
+.contact-us 
+{ 
+    grid-area: contact-us; 
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 15px;
+}
+.icons {
+grid-area: icons;
+max-width: 162px;
+}
+.ema {
+grid-area: ema;
+font-family: "Inter";
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+}
+.phonenumber {
+grid-area: phonenumber;
+font-family: "Inter";
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 29px;
+}
+.ema,
+.icons,
+.phonenumber {
+transform: translate(0px, 17px);
+}
