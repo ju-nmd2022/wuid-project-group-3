@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 body
 {
     position: relative;
@@ -191,7 +189,7 @@ body
     font-size: 40px;
     line-height: 48px;
 }
->>>>>>> 14fe609f435443db5be80277ffaf042b148bdc26
+
 :root {
     --primary: #d88921;
     --light: #eeeeee;
