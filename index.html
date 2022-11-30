@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
+    <meta charest="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>mainpage</title>
+    <link rel="stylesheet" type="text/css" href="mainpage.css" />
+    <style lang="scss" scoped></style>
   </head>
   <body>
     <nav>
@@ -34,7 +35,11 @@
         </button>
       </div>
     </nav>
-    <div class="container-2">
+
+    <!-- Scrolling-images -->
+
+    <div class="Scrolling-images">
+      <img src="Group 2.png" alt="" class="cities" />
       <form action="" class="search-bar">
         <input type="text" name="q" />
         <button type="submit">
@@ -43,58 +48,47 @@
       </form>
     </div>
 
-    <div class="grey-area">
-      <div><h1 class="top-3">Top 3:</h1></div>
-      <div class="grey-pic-1"></div>
-      <div class="grey-pic-2"></div>
-      <div class="grey-pic-3"></div>
+    <br />
+    <br />
+
+    <!-- popular -->
+    <div class="popular">
+      <p class="p-name">Popular destinations in Europe</p>
+      <br />
+      <br />
+      <div class="p">
+        <div class="p-guid">
+          <div class="Sognefjorden"><p class="p-photo">Sognefjorden</p></div>
+          <div class="Praha"><p class="p-photo">Praha</p></div>
+          <div class="London"><p class="p-photo">London</p></div>
+          <div class="Berlin"><p class="p-photo">Berlin</p></div>
+          <div class="Interlaken"><p class="p-photo">Interlaken</p></div>
+        </div>
+      </div>
     </div>
     <br />
     <br />
-    <div class="media-scroller">
-      <div class="media-element">
-        <img src="parkinn.webp" alt="parkinn" />
-        <p>Hotel name</p>
-      </div>
-      <div class="media-element">
-        <img src="hotel2.webp" alt="hotel2" />
-        <p>Hotel name</p>
-      </div>
-      <div class="media-element">
-        <img src="hotel.jpg" alt="hotel" />
-        <p>Hotel name</p>
-      </div>
-      <div class="media-element">
-        <img src="titanic.jpg" alt="titanic" />
-        <p>Hotel name</p>
-      </div>
-      <div class="media-element">
-        <img src="tail.jpg" alt="tail" />
-        <p>Hotel name</p>
+    <br />
+    <br />
+    <br />
+    <div class="contect">
+      <div class="c">
+        <p class="follow-us">Follow us</p>
+        <p class="contact-us">Contact us</p>
+        <p class="phonenumber">+46 072473965</p>
+        <a href="waha21by@ju.se" class="ema">waha21by@ju.se </a>
+        <img src="icons.png" alt="icons" class="icons" />
       </div>
     </div>
+    <br />
     <br />
     <br />
     <div class="footer">
-      <br />
-      <br />
-      <div class="contect">
-        <div class="c">
-          <p class="follow-us">Follow us</p>
-          <p class="contact-us">Contact us</p>
-          <p class="phonenumber">+46 072473965</p>
-          <a href="waha21by@ju.se" class="ema">waha21by@ju.se </a>
-          <img src="icons.png" alt="icons" class="icons" />
-        </div>
-      </div>
-      <br />
-      <br />
-      <br />
       <div class="f">
-        <img src="logo-2.png" alt="Logotype-small" class="logotype-small" />
-        <p class="footer-text">© 2022 Guidewide All rights reserved.</p>
+        <img src="logo-2.png" alt="Logotype-small" class="Logotype-small" />
+        <p class="footertext">© 2022 Guidewide All rights reserved.</p>
       </div>
     </div>
+    <script src="main.js"></script>
   </body>
-  <script src="main.js"></script>
 </html>
