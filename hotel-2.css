@@ -158,13 +158,12 @@ nav {
 /*Scroll for pictures "Hotel specific pictures */
 
 .media-scroller-3 {
-  display: grid;
+  display: flex;
   gap: var(--spacer);
   grid-auto-flow: column;
   width: 100%;
   height: 400px;
   background: #444444;
-  gap: 5px;
   align-items: center;
   justify-content: center;
 
@@ -184,6 +183,15 @@ nav {
   height: 200px;
   object-fit: cover;
   border-radius: 5px;
+}
+.media-element {
+  background-color:var(--primary);
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  height: 200px;
+  overflow-y: auto;
+  max-width:300px; 
 }
 
 /*Date from and to*/
@@ -355,5 +363,10 @@ nav {
   .ema,
   .phonenumber {
     font-size: 14px;
+  }
+}
+ @media (max-width: 1600px) {
+  .media-element {
+    display:none
   }
 }
