@@ -121,11 +121,10 @@ li {
   display: block;
   background-color: #777777;
   padding-top: 120px;
-  transition: 0,4s;
-
+  transition: 0, 4s;
 }
 .mobile-nav .is-active {
-left: 0%;
+  left: 0%;
 }
 .mobile-nav a {
   display: block;
@@ -201,17 +200,8 @@ left: 0%;
   color: black;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-/*Area where pictures and text below big picture */
-.grey-area {
-  width: 100%;
-  height: 400px;
-  background: #444444;
-  display: flex;
-  gap: 50px;
-  align-items: center;
-  justify-content: center;
-}
-.grey-pic-1 {
+
+/* .grey-pic-1 {
   width: 250px;
   height: 250px;
   margin: 0 2rem;
@@ -233,7 +223,7 @@ left: 0%;
   background: #777777;
   border-radius: 30px;
   box-shadow: 0 0 15px black;
-}
+} */
 
 /*Scroll for pictures*/
 
@@ -294,7 +284,8 @@ h1 {
 }
 .media-element-2 > img {
   inline-size: 100%;
-  aspect-ratio: 16 / 9;
+  width: 300px;
+  height: 200px;
   object-fit: cover;
 }
 
@@ -303,27 +294,57 @@ h1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: center;
 }
+/*Scroll for pictures*/
 
-  /*At what pixels will the hamburger show up */
-  @media (min-width: 880px) {
-    .hamburger {
-        display: none;
-    }
-    .menu {
-        display: flex;
-    }
-    }
-    /*At what pictures we swap big logo to small*/
-    @media (max-width: 880px) {
-    .gw-logo {
-        display: none;
-    }
-    }
-    @media (max-width: 880px) {
-    .gw-logo-2 {
-        visibility: visible;
-    }
-    } 
+.media-scroller-3 {
+  display: grid;
+  gap: var(--spacer);
+  grid-auto-flow: column;
+  width: 100%;
+  height: 400px;
+  background: #444444;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  padding: 0 var(--spacer) var(--spacer);
+}
+.media-element-3 {
+  display: grid;
+  grid-template-rows: min-content;
+  gap: var(--spacer);
+  padding: var(--spacer);
+}
+.media-element-3 > img {
+  inline-size: 100%;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/*At what pixels will the hamburger show up */
+@media (min-width: 880px) {
+  .hamburger {
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
+}
+/*At what pictures we swap big logo to small*/
+@media (max-width: 880px) {
+  .gw-logo {
+    display: none;
+  }
+}
+@media (max-width: 880px) {
+  .gw-logo-2 {
+    visibility: visible;
+  }
+}
 
 /* footer */
 
