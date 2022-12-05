@@ -187,20 +187,7 @@ left: 0%;
   height: 30px;
   cursor: pointer;
 }
-.top-3 {
-  margin-left: 90px;
-  margin-top: -195px;
-  position: absolute;
-  color: black;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-.top-33 {
-  margin-left: 90px;
-  margin-top: -160px;
-  position: absolute;
-  color: black;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
+
 
 /* .grey-pic-1 {
   width: 250px;
@@ -295,7 +282,7 @@ h1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: center;
 }
-/*Scroll for pictures "staying in berlin! */
+/*Scroll for pictures "staying in berlin */
 
 .media-scroller-3 {
   display: grid;
