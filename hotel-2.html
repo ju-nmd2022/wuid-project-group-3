@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="hotel-2.css" />
+    <link rel="stylesheet" href="hotel.css" />
   </head>
   <body>
-    <nav>
+    <nav class="navbar">
       <div class="container">
         <h1>
           <a href="index.html">
@@ -34,6 +34,13 @@
         </button>
       </div>
     </nav>
+    <nav class="mobile-nav">
+      <a href="#">Travel Guide</a>
+      <a href="#">Resturants</a>
+      <a href="hotel.html" class="is-active">Hotels</a>
+      <a href="#">Tickets</a>
+      <a href="#">About us</a>
+    </nav>
     <div class="container-2">
       <form action="" class="search-bar">
         <input type="text" name="q" />
@@ -44,30 +51,29 @@
     </div>
     <div class="media-scroller-3">
       <div class="media-element-3">
-        <img src="telefloor.jpeg" alt="telegraph floor" />
+        <img src="melia-hotel.jpeg" alt="melia-hotel" />
       </div>
       <div class="media-element-3">
-        <img src="telebar.jpeg" alt="telegraph bar" />
+        <img src="Grand-Hyatt.jpeg" alt="Grand-Hyatt" />
       </div>
       <div class="media-element-3">
-        <img src="teleshower.jpeg" alt="telegraph shower" />
+        <img src="the-mandala-hotel.jpg" alt="the-mandala-hotel" />
       </div>
-
+    </div>
+    
     <div class="date">
       <div class="from">
         <h2>From:</h2>
-        <br />
+    
         <input type="date" />
       </div>
 
       <div class="to">
         <h2>To:</h2>
-        <br />
         <input type="date" />
       </div>
     </div>
 
-    <!-- footer -->
     <div class="footer">
       <br />
       <br />
@@ -84,15 +90,10 @@
       <br />
       <br />
       <div class="f">
-        <img
-          src="logo-2.png"
-          alt="Logotype-small"
-          class="logotype-small"
-        />
-        <p class="footertext">© 2022 Guidewide All rights reserved.</p>
+        <img src="logo-2.png" alt="Logotype-small" class="logotype-small" />
+        <p class="footer-text">© 2022 Guidewide All rights reserved.</p>
       </div>
     </div>
-    <script src="main.js" defer></script>
-    
   </body>
+  <script src="main.js"></script>
 </html>

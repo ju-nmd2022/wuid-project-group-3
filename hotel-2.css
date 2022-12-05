@@ -186,30 +186,6 @@ nav {
   border-radius: 5px;
 }
 
-/* .grey-pic-1 {
-  width: 250px;
-  height: 250px;
-  margin: 0 2rem;
-  background: #777777;
-  border-radius: 30px;
-  box-shadow: 0 0 15px black;
-}
-.grey-pic-2 {
-  width: 250px;
-  height: 250px;
-  background: #777777;
-  border-radius: 30px;
-  box-shadow: 0 0 15px black;
-}
-.grey-pic-3 {
-  width: 250px;
-  height: 250px;
-  margin: 0 2rem;
-  background: #777777;
-  border-radius: 30px;
-  box-shadow: 0 0 15px black;
-} */
-
 /*Date from and to*/
 .date {
   display: flex;
@@ -234,6 +210,7 @@ nav {
   outline: none;
   border-radius: 10px;
 }
+
 /*At what pixels will the hamburger show up */
 @media (min-width: 880px) {
   .hamburger {
