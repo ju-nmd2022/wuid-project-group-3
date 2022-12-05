@@ -213,27 +213,26 @@ nav {
   outline: none;
   border-radius: 10px;
 }
-
-/*At what pixels will the hamburger show up */
-@media (min-width: 880px) {
-  .hamburger {
-    display: none;
-  }
-  .menu {
-    display: flex;
-  }
-}
-/*At what pictures we swap big logo to small*/
-@media (max-width: 880px) {
-  .gw-logo {
-    display: none;
-  }
-}
-@media (max-width: 880px) {
-  .gw-logo-2 {
-    visibility: visible;
-  }
-}
+  /*At what pixels will the hamburger show up */
+  @media (min-width: 880px) {
+    .hamburger {
+        display: none;
+    }
+    .menu {
+        display: flex;
+    }
+    }
+    /*At what pictures we swap big logo to small*/
+    @media (max-width: 880px) {
+    .gw-logo {
+        display: none;
+    }
+    }
+    @media (max-width: 880px) {
+    .gw-logo-2 {
+        visibility: visible;
+    }
+    } 
 /* footer */
 
 .footer {
