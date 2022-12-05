@@ -185,13 +185,16 @@ nav {
   border-radius: 5px;
 }
 .media-element {
-  background-color:var(--primary);
+  display: grid;
+
+  background-color: var(--primary);
   color: #ffffff;
-  padding: 10px;
+  padding: var(--spacer);
   border-radius: 5px;
   height: 200px;
+  gap: var(--spacer);
   overflow-y: auto;
-  max-width:300px; 
+  width: 300px;
 }
 
 /*Date from and to*/
@@ -365,8 +368,8 @@ nav {
     font-size: 14px;
   }
 }
- @media (max-width: 1600px) {
+@media (max-width: 1600px) {
   .media-element {
-    display:none
+    display: none;
   }
 }
