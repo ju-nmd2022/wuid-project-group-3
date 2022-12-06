@@ -13,6 +13,7 @@
 /*list color (toolbar)*/
 li {
   color: #ffffff;
+  list-style: none;
 }
 .gw-logo {
   width: 100px;
@@ -30,20 +31,34 @@ li {
   justify-content: space-between;
 }
 /*nav: properties for toolbar color etc*/
-nav {
+.navbar {
   background-color: var(--dark);
   padding: 16px 32px;
   border-bottom: 3px solid var(--primary);
 }
+
 /*Hamburger */
-.menu {
-  display: none;
+.nav-menu {
+  height: 30px;
+  display: flex;
   flex: 1 1 0%;
   justify-content: flex-end;
   margin: 0px -16px;
 }
+
 /* Border and properties for "about..." in toolbar*/
-.menu a {
+.nav-menu a {
+  color: var(--light);
+  margin: 0 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.4s;
+  padding: 8px 16px;
+  border-radius: 99px;
+}
+
+/* Border and properties for "about..." in toolbar*/
+.nav-menu a {
   color: var(--light);
   margin: 0 16px;
   font-weight: 600;
@@ -55,8 +70,8 @@ nav {
 
 /*Higlighting which page we are on*/
 /*When hover is orange*/
-.menu a.is-active,
-.menu a:hover {
+.nav-menu a.is-active,
+.nav-menu a:hover {
   background-color: var(--primary);
 }
 
@@ -93,19 +108,6 @@ nav {
 .hamburger:hover span:nth-child(2) {
   transform: translateX(10px);
   background-color: var(--primary);
-}
-
-.hamburger.is-active span:nth-child(1) {
-  transform: translate(0px, -2px) rotate(45deg);
-}
-
-.hamburger.is-active span:nth-child(3) {
-  transform: translate(-3px, 3px) rotate(-45deg);
-}
-
-.hamburger.is-active span:nth-child(2) {
-  opacity: 0;
-  transform: translateX (15px);
 }
 
 .hamburger.is-active:hover span {
@@ -154,6 +156,64 @@ nav {
   width: 30px;
   height: 30px;
   cursor: pointer;
+}
+
+/*At what pixels will the hamburger show up */
+@media (max-width: 900px) {
+  .hamburger:hover span:nth-child(2) {
+    transform: translateX(10px);
+    background-color: var(--primary);
+  }
+
+  .hamburger.is-active span:nth-child(1) {
+    transform: translate(0px, -2px) rotate(45deg);
+  }
+
+  .hamburger.is-active span:nth-child(3) {
+    transform: translate(-3px, 3px) rotate(-45deg);
+  }
+
+  .hamburger.is-active span:nth-child(2) {
+    opacity: 0;
+    transform: translateX (15px);
+  }
+  .nav-menu {
+    position: fixed;
+    left: 102%;
+    top: 275px;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.9s;
+  }
+  .nav-menu a {
+    color: var(--light);
+    background-color: var(--dark);
+  }
+  .nav-item {
+    margin: 16px 0;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+}
+@media (min-width: 900px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+/*At what pictures we swap big logo to small*/
+@media (max-width: 900px) {
+  .gw-logo {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .gw-logo-2 {
+    visibility: visible;
+  }
 }
 /*Scroll for pictures "Hotel specific pictures */
 
@@ -222,26 +282,6 @@ nav {
   border-radius: 10px;
 }
 
-/*At what pixels will the hamburger show up */
-@media (min-width: 880px) {
-  .hamburger {
-    display: none;
-  }
-  .menu {
-    display: flex;
-  }
-}
-/*At what pictures we swap big logo to small*/
-@media (max-width: 880px) {
-  .gw-logo {
-    display: none;
-  }
-}
-@media (max-width: 880px) {
-  .gw-logo-2 {
-    visibility: visible;
-  }
-}
 /* footer */
 
 .footer {
@@ -366,10 +406,5 @@ nav {
   .ema,
   .phonenumber {
     font-size: 14px;
-  }
-}
-@media (max-width: 1600px) {
-  .media-element {
-    display: none;
   }
 }
