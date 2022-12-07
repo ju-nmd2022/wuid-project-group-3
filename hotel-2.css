@@ -259,7 +259,7 @@ li {
   border-radius: 10px;
   max-width: 600px;
   margin-bottom: 50px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 16px;
 }
 
@@ -293,6 +293,7 @@ li {
   background: #ffffff;
   min-height: 50vh;
   display: flex;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -363,10 +364,10 @@ li:hover {
   color: #d88921;
 }
 li {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 h3 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin: 9px;
 }
 .dropdown-2 {
@@ -399,37 +400,41 @@ h3 {
   opacity: 1;
 }
 
-/* footer */
+
+                                                          /* footer */
 
 .footer {
   width: 100%;
-  height: 50px;
+  height: 230px;
   background: var(--dark);
-}
-.footer-text {
+  }
+  .footer-text {
   color: #ffffff;
-}
-
-.f {
+  font-size: 15px;
+  }
+  
+  .f {
   max-width: 1280px;
   margin: 0 auto;
   display: flex;
   gap: 50px;
   align-items: center;
   justify-content: flex-start;
-}
-
-.logotype-small {
+  }
+  
+  .logotype-small {
   max-width: 60px;
   margin-top: 10px;
-  margin-left: 30px;
-}
-/* contect */
-.contect {
+  /* margin-left: 30px; */
+  }
+  
+  /* contect */
+  .contect {
   width: 100%;
   height: 55px;
-}
-.c {
+  }
+  
+  .c {
   max-width: 1280px;
   height: 55px;
   margin: 0 auto;
@@ -438,95 +443,151 @@ h3 {
   grid-template-columns: 25% 12.5% 12.5% 50%;
   grid-template-rows: 25px 50px;
   grid-template-areas:
-    "follow-us contact-us contact-us ."
-    "icons ema phonenumber .";
+      "follow-us contact-us contact-us ."
+      "icons ema phonenumber .";
   justify-items: stretch;
-}
-.follow-us {
-  grid-area: follow-us;
-  font-family: "Inter";
-  font-style: normal;
-  /* font-weight: 500; */
-  font-size: 15px;
-  /* line-height: 24px; */
-}
-.contact-us {
-  grid-area: contact-us;
-  font-family: "Inter";
-  font-style: normal;
-  /* font-weight: 500; */
-  font-size: 15px;
-  /* line-height: 24px; */
-}
-.icons {
+  }
+  
+  .follow-us 
+  { 
+      grid-area: follow-us; 
+      font-family: 'Inter';
+      font-style: normal;
+      font-size: 15px;
+      font-weight:bold;
+  }
+  
+  .contact-us 
+  { 
+      grid-area: contact-us; 
+      font-family: 'Inter';
+      font-style: normal;
+      font-size: 15px;
+      font-weight:bold;
+  }
+  
+  .icons {
   grid-area: icons;
   max-width: 162px;
-}
-.ema {
+  }
+  
+  .ema {
   grid-area: ema;
   font-family: "Inter";
   font-style: normal;
-  font-weight: 400;
+  font-weight:bold;
   font-size: 15px;
   line-height: 24px;
-}
-.phonenumber {
+  }
+  
+  .phonenumber {
   grid-area: phonenumber;
   font-family: "Inter";
   font-style: normal;
-  font-weight: 400;
+  font-weight:bold;
   font-size: 15px;
   line-height: 29px;
-}
-.ema,
-.icons,
-.phonenumber {
-  transform: translate(0px, 17px);
-}
-
-/* responsive for footer */
-
-@media (max-width: 880px) {
-  .f {
-    max-width: 800px;
-    margin: 0 auto;
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    justify-content: flex-start;
   }
-  .footer-text {
-    margin-top: 10px;
-    font-size: 10px;
-  }
-  .logotype-small {
-    max-width: 40px;
-    margin-left: 30px;
-  }
-  .c {
-    max-width: 800px;
-    margin: 0 auto;
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-template-columns: 30px 0.7fr 1fr;
-    grid-template-rows: 0.5fr 1fr 0.5fr;
-    gap: 0px 0px;
-    grid-template-areas:
-      ". follow-us contact-us"
-      ". icons ema"
-      ". icons phonenumber";
-    justify-items: stretch;
-  }
-  .icons {
-    max-width: 100px;
-  }
+  
   .ema,
+  .icons,
   .phonenumber {
-    font-size: 14px;
+  transform: translate(0px, 10px);
   }
-}
+  
+  .ema{ 
+  color: #000000; 
+  text-decoration: none;
+  }
+  
+  
+                                          /* responsive for footer */
+  
+  @media (max-width: 880px) {
+      .f {
+          max-width: 800px;
+          margin: 0 auto;
+          display: flex;
+          gap: 30px;
+          align-items: center;
+          justify-content: flex-start;
+      }
+      .footer-text {
+          margin-top: 10px;
+          font-size: 10px;
+      }
+      .logotype-small {
+          max-width: 40px;
+          margin-left: 30px;
+      }
+      .c {
+          max-width: 800px;
+          margin: 0 auto;
+          display: grid; 
+          grid-auto-columns: 1fr; 
+          grid-template-columns: 30px 0.7fr 1fr; 
+          grid-template-rows: 0.5fr 1fr 0.5fr; 
+          gap: 0px 0px; 
+          grid-template-areas: 
+          ". follow-us contact-us"
+          ". icons ema"
+          ". icons phonenumber"; 
+          justify-items: stretch; 
+      }
+      .icons{
+          max-width: 100px;
+      }
+      .ema, .phonenumber{
+          font-size: 14px;
+      }
+  }
+
+
+
 @media (max-width: 700px) {
   .date {
     gap: 70px;
   }
 }
+.text1{
+    max-width: 1280px;
+    margin: 0 auto; 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    color: #BBBABA;
+}
+.image-scroller {
+  
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    display: grid; 
+    grid-auto-columns: 30%; 
+    grid-template-columns: 530px 530px 530px 530px 530px; 
+    grid-template-rows: 300px; 
+    gap: 0px 10px; 
+    grid-template-areas: 
+      "Cityscapes1 Cityscapes2 Cityscapes3 Cityscapes4 Cityscapes5"; 
+    justify-items: stretch; 
+  }
+  .Cityscapes
+  {
+    max-width: 530px;
+    border-radius: 10px;
+  }
+  .Cityscapes1 { grid-area: Cityscapes1; }
+  .Cityscapes2 { grid-area: Cityscapes2; }
+  .Cityscapes3 { grid-area: Cityscapes3; }
+  .Cityscapes4 { grid-area: Cityscapes4; }
+  .Cityscapes5 { grid-area: Cityscapes5; }
+  .grey{
+    width: 100%;
+    background: #444444;
+    }
+  @media (max-width: 880px) {
+    .text1{
+        max-width: 600px;
+    }
+  }  

@@ -1,3 +1,4 @@
+/* just for push */
 :root {
   --primary: #d88921;
   --light: #eeeeee;
@@ -12,6 +13,7 @@
 }
 /*list color (toolbar)*/
 li {
+  color: #ffffff;
   list-style: none;
 }
 .gw-logo {
@@ -134,10 +136,16 @@ li {
   padding: 24px 20px;
   font-size: 20px;
 }
+
+
+
+
+
 /*img in search-bar*/
 .search-bar button img {
   width: 20px;
 }
+
 .search-bar button {
   border-radius: 50%;
   border: 0;
@@ -375,7 +383,7 @@ h1 {
 
 /*Paragraph in hotel*/
 .media-element > p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: center;
 }
 /*Scroll for pictures*/
@@ -406,7 +414,8 @@ h1 {
 }
 /*Paragraph in hotel*/
 .media-element-2 > p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
   text-decoration: none;
 }
 a {
@@ -442,4 +451,110 @@ a {
   height: 200px;
   object-fit: cover;
   border-radius: 5px;
+}
+
+
+/* top 3 hotel */
+
+
+.grey{
+  width: 100%;
+  background: #444444;
+}  
+.name1{
+  max-width: 1280px;
+  margin: 0 auto;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+  color: #BBBABA;
+}
+.name2{
+  max-width: 1280px;
+  margin: 0 auto;
+  font-family: 'Inter';
+  font-style: normal;
+  color: #BBBABA;
+}
+.hotel
+{
+    width: 100%;
+    /* height: 500px; */
+}
+.image1
+{
+    border-radius: 10px;
+    max-width: 420px;
+
+}
+.stars
+{
+    max-width: 100px;
+}
+.htext1,.htext2{
+  font-family: 'Inter';
+  font-style: normal;
+  color: #BBBABA;
+}
+.htext1
+{
+    font-weight: bold;
+    font-size: 17px;
+}
+.htext2
+{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: right;
+}
+.h-grid {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 140px 140px 110px 140px 140px 110px 140px 140px 110px; 
+    grid-template-rows: 335px 25px 30px; 
+    gap: 0px 15px; 
+    grid-template-areas: 
+      "h-grid-1 h-grid-1 h-grid-1 h-grid-2 h-grid-2 h-grid-2 h-grid-3 h-grid-3 h-grid-3"
+      "h-grid-1-text-1 h-grid-1-text-1 h-grid-1-1 h-grid-2-text-1 h-grid-2-text-1 h-grid-2-1 h-grid-3-text-1 h-grid-3-text-1 h-grid-3-1"
+      ". . h-grid-1-text-2 . . h-grid-2-text-2 . . h-grid-3-text-2"; 
+    justify-items: stretch; 
+}
+.h-grid-1 { grid-area: h-grid-1; }
+.h-grid-2 { grid-area: h-grid-2; }
+.h-grid-3 { grid-area: h-grid-3; }
+.h-grid-1-text-1 { grid-area: h-grid-1-text-1; }
+.h-grid-1-text-2 { grid-area: h-grid-1-text-2; }
+.h-grid-1-1 { grid-area: h-grid-1-1; }
+.h-grid-2-text-1 { grid-area: h-grid-2-text-1; }
+.h-grid-2-text-2 { grid-area: h-grid-2-text-2; }
+.h-grid-2-1 { grid-area: h-grid-2-1; }
+.h-grid-3-text-1 { grid-area: h-grid-3-text-1; }
+.h-grid-3-text-2 { grid-area: h-grid-3-text-2; }
+.h-grid-3-1 { grid-area: h-grid-3-1; }
+
+@media (max-width: 880px) {
+  .h-grid{
+    max-width: 600px;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    grid-template-columns: 200px 200px 180px 200px 200px 180px 200px 200px 180px; 
+    grid-template-rows: 450px 25px 30px; 
+    gap: 0px 10px;
+  }
+  .image1
+  {
+      max-width: 600px;
+  } 
+  .name1,.name2
+  {
+  max-width: 700px;
+  }  
+  .stars{
+    transform: translate(80px, 0px);
+  }
 }
