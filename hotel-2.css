@@ -338,6 +338,13 @@ li {
   transform: rotate(180deg);
 }
 
+
+/* text decoration for the a tag in "book now*/
+a{
+  text-decoration: none;
+
+}
+
 .dropdown-menu {
   list-style: none;
   padding: 0.2em 0.5em;
