@@ -385,9 +385,9 @@ h3{
 /* .dropdown-menu:hover{
   background: #aaaaaa;
 } */
-/* .activate{
+ .activate{
   background-color:#ffffff;
-} */
+} 
 
 .dropdown-menu-open {
   display: block;
