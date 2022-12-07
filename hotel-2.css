@@ -257,9 +257,9 @@ li {
   background: #777777;
   padding: 30px;
   border-radius: 10px;
-  max-width: 600px;
+  max-width: 800px;
   margin-bottom: 50px;
-  font-family: "Times New Roman", Times, serif;
+  font-family:Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
 
@@ -364,11 +364,10 @@ li:hover {
   color: #d88921;
 }
 li {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
+font-family: Arial, Helvetica, sans-serif;}
 h3 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  margin: 9px;
+font-family: Arial, Helvetica, sans-serif; 
+margin: 9px;
 }
 .dropdown-2 {
   display: flex;
