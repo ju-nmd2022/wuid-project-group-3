@@ -457,7 +457,7 @@ margin: 9px;
   .follow-us 
   { 
       grid-area: follow-us; 
-      font-family: 'Inter';
+      font-family: 'Inter', sans-serif;
       font-style: normal;
       font-size: 15px;
       font-weight:bold;
@@ -466,7 +466,7 @@ margin: 9px;
   .contact-us 
   { 
       grid-area: contact-us; 
-      font-family: 'Inter';
+      font-family: 'Inter', sans-serif;
       font-style: normal;
       font-size: 15px;
       font-weight:bold;
@@ -479,7 +479,7 @@ margin: 9px;
   
   .ema {
   grid-area: ema;
-  font-family: "Inter";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight:bold;
   font-size: 15px;
@@ -488,7 +488,7 @@ margin: 9px;
   
   .phonenumber {
   grid-area: phonenumber;
-  font-family: "Inter";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight:bold;
   font-size: 15px;
@@ -558,7 +558,7 @@ margin: 9px;
 .text1{
     max-width: 1280px;
     margin: 0 auto; 
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
