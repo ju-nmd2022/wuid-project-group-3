@@ -12,9 +12,9 @@ bnt.onclick = function () {
   balert.style.display = "block";
 };
 X.onclick = function () {
-  balert.style.display = "none";
-};
-let back = document.getElementById("back");
-back.onclick = function () {
   window.location.replace("index.html");
 };
+// let back = document.getElementById("back");
+// back.onclick = function () {
+//   window.location.replace("index.html");
+// };

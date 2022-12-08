@@ -509,7 +509,7 @@ nav {
 
   display: none;
   position: absolute;
-  top: 1600px;
+  top: 2000px;
   width: 100%;
   height: 330px;
   background-color: grey;
@@ -558,32 +558,42 @@ a {
 .SUMMARY {
   width: 100%;
 }
-.s {
+.frame{
   border-style:solid;
-  border-width: 1px;
+border-width:3px;
   border-radius: 10px;
-  max-width: 1200px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.s{
+  transform: translate(30px, 0px);
+  max-width: 600px;
   margin: 0 auto;
   display: grid;
   grid-auto-columns: 1fr;
-  grid-template-columns: 350px 300px 250px;
-  grid-template-rows: 50px 70px 50px 50px 50px 70px 50px 30px 70px 50px 50px 70px 50px 30px;
+  grid-template-columns:  400px 200px;
+  grid-template-rows: 50px 70px 50px 50px 50px 70px 50px 50px 50px 30px 70px 50px 50px 70px 50px 30px;
   gap: 10px 10px;
   grid-template-areas:
-    ". . ."
-    ". Summarytext ."
-    ". Stext-1 date-1"
-    ". Stext-2 date-2"
-    ". Stext-3 date-3"
-    ". Stext-4 ."
-    ". Stext-5 ."
-    ". slink ."
-    ". Stext-6 ."
-    ". Stext-7 price1"
-    ". Stext-8 price2"
-    ". Stext-9 price3"
-    ". bnt ."
-    ". . .";
+    " . ."
+    " Summarytext ."
+    " Stext-1 date-1"
+    " Stext-2 date-2"
+    " Stext-3 date-3"
+    " Stext-4 ."
+    " Stext-5 Stext-5 "
+    " Stext-10 Stext-10 "
+    " Stext-11 Stext-11 "
+    /* " Stext-12 Stext-12 " */
+    /* " Stext-13 Stext-13 " */
+    /* " Stext-14 Stext-14 " */
+    " slink ."
+    " Stext-6 ."
+    " Stext-7 price1"
+    " Stext-8 price2"
+    " Stext-9 price3"
+    " bnt ."
+    " . .";
   justify-items: stretch;
 }
 .Summarytext {
@@ -634,6 +644,21 @@ a {
 .Stext-9 {
   grid-area: Stext-9;
 }
+.Stext-10 {
+  grid-area: Stext-10;
+}
+.Stext-11 {
+  grid-area: Stext-11;
+}
+.Stext-12 {
+  grid-area: Stext-12;
+}
+.Stext-13 {
+  grid-area: Stext-13;
+}
+.Stext-14 {
+  grid-area: Stext-14;
+}
 .price3 {
   grid-area: price3;
 }
@@ -641,7 +666,7 @@ a {
     border: none;
   grid-area: bnt;
   border-radius: 10px;
-  transform: translate(120px, 0px);
+  transform: translate(100px, 0px);
 }
 .Summarytext,
 .Stext-4,
@@ -658,8 +683,8 @@ a {
 .Stext-6,
 .Stext-7,
 .Stext-8,
-.Stext-9,
-.Stext-5 {
+.Stext-9
+ {
   font-family: "Inter";
   font-style: normal;
   font-size: 25px;
@@ -670,12 +695,19 @@ a {
 .slink,
 .price1,
 .price2,
-.price3 {
+.price3,
+.Stext-11,
+.Stext-12,
+.Stext-13,
+.Stext-14,
+.Stext-10,
+.Stext-5 {
   font-family: "Inter";
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
 }
+/* Keeping information right-aligned */
 .date-1,
 .date-2,
 .date-3,
@@ -687,7 +719,7 @@ a {
 
 /* responsive */
 
-@media (max-width: 880px) {
+@media (max-width: 1400px) {
   .text1 {
     max-width: 600px;
   }
@@ -711,11 +743,11 @@ a {
       "method";
     justify-items: stretch;
   }
-  .s {
-    grid-template-columns: 50px 300px 180px;
-    max-width: 600px;
+  .s{
+      grid-template-columns:  400px 150px;
+      max-width: 550px;
   }
   #bnt {
-    transform: translate(80px, 0px);
+    transform: translate(60px, 0px);
   }
 }

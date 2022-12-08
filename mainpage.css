@@ -669,7 +669,7 @@ li {
 
 /* responsive for travel guide hotel scoller and restaurant */
 
-@media (max-width: 880px) {
+@media (max-width: 1400px) {
   .guid1,
   .guid2 {
     max-width: 600px;
