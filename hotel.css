@@ -545,3 +545,31 @@ a {
     grid-auto-columns: 50%;
   }
 }
+@media (max-width: 800px) {
+  .h-grid {
+    max-width: 300px;
+    grid-template-columns: 140px 20px 110px 140px 20px 110px 140px 20px 110px;
+    grid-template-rows: 230px 25px 30px;
+    gap: 0px 15px;
+  }
+  .image1 {
+    max-width: 300px;
+  }
+  .stars {
+    transform: translate(40px, 0px);
+    max-width: 70px;
+  }
+  .htext1 {
+    font-size: 13px;
+  }
+  .name1,
+  .name2 {
+    max-width: 300px;
+  }
+  .name1 {
+    font-size: 25px;
+  }
+  .icons {
+    max-width: 100px;
+  }
+}
