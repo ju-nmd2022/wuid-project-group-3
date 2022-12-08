@@ -753,3 +753,50 @@ a {
     max-width: 650px;
   }
 }
+
+@media (max-width: 800px) {
+  .text1,.itext-1,.itext-2 {
+    max-width: 300px;
+    font-size: 25px;
+  }
+  .image-scroller {
+    grid-template-columns: 300px 300px 300px 300px 300px;
+    grid-template-rows: 200px;
+  }
+  .Cityscapes {
+    max-width: 300px;
+  }
+  .inpute {
+    max-width: 300px;
+    grid-template-columns: 300px;
+  }
+  .s{
+    grid-template-columns:  150px 150px;
+    max-width: 350px;
+  }
+  .Stext-1,
+  .Stext-2,
+  .Stext-3,
+  .Stext-6,
+  .Stext-7,
+  .Stext-8,
+  .Stext-9,
+  .date-1,
+  .date-2,
+  .date-3,
+  .slink,
+  .price1,
+  .price2,
+  .price3,
+  .Stext-11,
+  .Stext-12,
+  .Stext-13,
+  .Stext-14,
+  .Stext-10,
+  .Stext-5{
+    font-size: 20px;
+  }
+  #bnt{
+    font-size: 10px;
+  }
+}
