@@ -748,3 +748,127 @@ li {
     transform: translate(80px, 0px);
   }
 }
+@media (max-width: 800px) {
+  /* .text,.name1,.name2{
+    max-width: 300px;
+  } */
+  .text,
+  .t-guide,
+  .r-grid,
+  .h-grid,
+  .name1,
+  .name2,
+  .text1,
+  .btext,
+  .name1 {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .text1,.btext,.name1 {
+    font-size: 25px;
+  }
+  .btext{
+    line-height: auto;
+  }
+  .Berlin{
+    font-size: 70px;
+  }
+  .image-scroller {
+    grid-template-columns: 300px 300px 300px 300px 300px;
+    grid-template-rows: 200px;
+  }
+  .Cityscapes {
+    max-width: 300px;
+  }
+  .r-grid {
+    max-width: 300px;
+    margin: 0 auto;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 170px 20px 40px;
+    gap: 0px 15px;
+    justify-items: stretch;
+    transform: translate(0px, -15px);
+  }
+  .restaurant1 {
+    max-width: 300px;
+    border-radius: 10px;
+  }
+  .rtext1 {
+    font-size: 13px;
+  }
+  .rtext2 {
+    font-size: 10px;
+  }
+  .t-guide {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 300px;
+    grid-template-rows: 125px 30px 50px 200px 20px 70px 200px 20px 70px;
+    /* gap: 5px 0px; */
+    justify-items: stretch;
+  }
+  .guid1,.guid2{
+    max-width: 300px;
+  }
+  .text-1{
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .text-2{
+    font-size: 13px;
+    line-height: 13px;
+  }
+  .text-1-1{
+    font-size: 20px;
+    line-height: 18px;
+    transform: translate(30px, -10px);
+  }
+  .guide-1 {
+    grid-area: 1 / 1 / 4 / 2;
+  }
+  .guide-1-text-1 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .guide-2 {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+  .guide-2-text-1 {
+    grid-area: 5 / 1 / 6 / 2;
+  }
+  .guide-2-text-2 {
+    grid-area: 6 / 1 / 7 / 2;
+  }
+  .guide-3 {
+    grid-area: 7 / 1 / 8 / 2;
+  }
+  .guide-3-text-1 {
+    grid-area: 8 / 1 / 9 / 2;
+  }
+  .guide-3-text-2 {
+    grid-area: 9 / 1 / 10 / 2;
+  }
+  .h-grid {
+    max-width: 300px;
+    grid-template-columns: 140px 20px 110px 140px 20px 110px 140px 20px 110px;
+    grid-template-rows: 230px 25px 30px;
+    gap: 0px 15px;
+    grid-template-areas:
+      "h-grid-1 h-grid-1 h-grid-1 h-grid-2 h-grid-2 h-grid-2 h-grid-3 h-grid-3 h-grid-3"
+      "h-grid-1-text-1 h-grid-1-text-1 h-grid-1-1 h-grid-2-text-1 h-grid-2-text-1 h-grid-2-1 h-grid-3-text-1 h-grid-3-text-1 h-grid-3-1"
+      ". . h-grid-1-text-2 . . h-grid-2-text-2 . . h-grid-3-text-2";
+    justify-items: stretch;
+  }
+  .image1{
+    max-width: 300px;
+  }
+  .stars{
+    transform: translate(40px, 0px);
+    max-width: 70px;
+  }
+  .htext1{
+    font-size: 13px;
+  }
+
+}
