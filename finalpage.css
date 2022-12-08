@@ -558,20 +558,20 @@ a {
 .SUMMARY {
   width: 100%;
 }
-.frame{
-  border-style:solid;
-border-width:3px;
+.frame {
+  border-style: solid;
+  border-width: 3px;
   border-radius: 10px;
   max-width: 1280px;
   margin: 0 auto;
 }
-.s{
+.s {
   transform: translate(30px, 0px);
   max-width: 600px;
   margin: 0 auto;
   display: grid;
   grid-auto-columns: 1fr;
-  grid-template-columns:  400px 200px;
+  grid-template-columns: 400px 200px;
   grid-template-rows: 50px 70px 50px 50px 50px 70px 50px 50px 50px 30px 70px 50px 50px 70px 50px 30px;
   gap: 10px 10px;
   grid-template-areas:
@@ -663,7 +663,7 @@ border-width:3px;
   grid-area: price3;
 }
 #bnt {
-    border: none;
+  border: none;
   grid-area: bnt;
   border-radius: 10px;
   transform: translate(100px, 0px);
@@ -683,8 +683,7 @@ border-width:3px;
 .Stext-6,
 .Stext-7,
 .Stext-8,
-.Stext-9
- {
+.Stext-9 {
   font-family: "Inter";
   font-style: normal;
   font-size: 25px;
@@ -743,11 +742,14 @@ border-width:3px;
       "method";
     justify-items: stretch;
   }
-  .s{
-      grid-template-columns:  400px 150px;
-      max-width: 550px;
+  .s {
+    grid-template-columns: 400px 150px;
+    max-width: 550px;
   }
   #bnt {
     transform: translate(60px, 0px);
+  }
+  .frame {
+    max-width: 650px;
   }
 }

@@ -154,63 +154,6 @@ li {
   cursor: pointer;
 }
 
-/*At what pixels will the hamburger show up */
-@media (max-width: 930px) {
-  .hamburger:hover span:nth-child(2) {
-    transform: translateX(10px);
-    background-color: var(--primary);
-  }
-
-  .hamburger.is-active span:nth-child(1) {
-    transform: translate(0px, -2px) rotate(45deg);
-  }
-
-  .hamburger.is-active span:nth-child(3) {
-    transform: translate(-3px, 3px) rotate(-45deg);
-  }
-
-  .hamburger.is-active span:nth-child(2) {
-    opacity: 0;
-    transform: translateX (15px);
-  }
-  .nav-menu {
-    position: fixed;
-    left: 102%;
-    top: 290px;
-    gap: 0;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    transition: 0.9s;
-  }
-  .nav-menu a {
-    color: var(--light);
-    background-color: var(--dark);
-  }
-  .nav-item {
-    margin: 16px 0;
-  }
-  .nav-menu.active {
-    left: 0;
-  }
-}
-@media (min-width: 900px) {
-  .hamburger {
-    display: none;
-  }
-}
-
-/*At what pictures we swap big logo to small*/
-@media (max-width: 900px) {
-  .gw-logo {
-    display: none;
-  }
-}
-@media (max-width: 900px) {
-  .gw-logo-2 {
-    visibility: visible;
-  }
-}
 
 /* footer */
 
@@ -309,46 +252,7 @@ li {
   text-decoration: none;
 }
 
-/* responsive for footer */
 
-@media (max-width: 880px) {
-  .f {
-    max-width: 800px;
-    margin: 0 auto;
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .footer-text {
-    margin-top: 10px;
-    font-size: 10px;
-  }
-  .logotype-small {
-    max-width: 40px;
-    margin-left: 30px;
-  }
-  .c {
-    /* margin-left: 30px; */
-    max-width: 800px;
-    /* height: 55px; */
-    margin: 0 auto;
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-template-columns: 30px 0.7fr 1fr;
-    grid-template-rows: 0.5fr 1fr 0.5fr;
-    gap: 0px 0px;
-    grid-template-areas:
-      ". follow-us contact-us"
-      ". icons ema"
-      ". icons phonenumber";
-    justify-items: stretch;
-  }
-  .ema,
-  .phonenumber {
-    font-size: 14px;
-  }
-}
 
 /*Scroll for pictures*/
 
@@ -373,7 +277,7 @@ li {
 }
 .media-element > img {
   inline-size: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 15 /10;
   object-fit: cover;
 }
 
@@ -409,7 +313,7 @@ text-align: center;
 }
 .media-element-2 > img {
   inline-size: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 15 / 10;
   object-fit: cover;
 }
 /*Paragraph in hotel*/
@@ -422,36 +326,7 @@ a {
   text-decoration: none;
   color: black;
 }
-/*Scroll for pictures "staying in berlin */
 
-.media-scroller-3 {
-  display: grid;
-  gap: var(--spacer);
-  grid-auto-flow: column;
-  width: 100%;
-  height: 400px;
-  background: #444444;
-  gap: 5px;
-  align-items: center;
-  justify-content: center;
-
-  overflow-x: auto;
-  overscroll-behavior-inline: contain;
-  padding: 0 var(--spacer) var(--spacer);
-}
-.media-element-3 {
-  display: grid;
-  grid-template-rows: min-content;
-  gap: var(--spacer);
-  padding: var(--spacer);
-}
-.media-element-3 > img {
-  inline-size: 100%;
-  width: 300px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 5px;
-}
 
 
 /* top 3 hotel */
@@ -556,5 +431,103 @@ a {
   }  
   .stars{
     transform: translate(80px, 0px);
+  }
+}
+
+/* responsive for footer */
+
+@media (max-width: 880px) {
+  .f {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .footer-text {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  .logotype-small {
+    max-width: 40px;
+    margin-left: 30px;
+  }
+  .c {
+    /* margin-left: 30px; */
+    max-width: 800px;
+    /* height: 55px; */
+    margin: 0 auto;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 30px 0.7fr 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". follow-us contact-us"
+      ". icons ema"
+      ". icons phonenumber";
+    justify-items: stretch;
+  }
+  .ema,
+  .phonenumber {
+    font-size: 14px;
+  }
+}
+/*At what pixels will the hamburger show up */
+@media (max-width: 930px) {
+  .hamburger:hover span:nth-child(2) {
+    transform: translateX(10px);
+    background-color: var(--primary);
+  }
+
+  .hamburger.is-active span:nth-child(1) {
+    transform: translate(0px, -2px) rotate(45deg);
+  }
+
+  .hamburger.is-active span:nth-child(3) {
+    transform: translate(-3px, 3px) rotate(-45deg);
+  }
+
+  .hamburger.is-active span:nth-child(2) {
+    opacity: 0;
+    transform: translateX (15px);
+  }
+  .nav-menu {
+    position: fixed;
+    left: 102%;
+    top: 290px;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.9s;
+  }
+  .nav-menu a {
+    color: var(--light);
+    background-color: var(--dark);
+  }
+  .nav-item {
+    margin: 16px 0;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+}
+@media (min-width: 900px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+/*At what pictures we swap big logo to small*/
+@media (max-width: 900px) {
+  .gw-logo {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .gw-logo-2 {
+    visibility: visible;
   }
 }
