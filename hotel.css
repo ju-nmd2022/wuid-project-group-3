@@ -539,3 +539,9 @@ a {
     visibility: visible;
   }
 }
+@media (max-width: 900px) {
+  .media-scroller,
+  .media-scroller-2 {
+    grid-auto-columns: 50%;
+  }
+}
