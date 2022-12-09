@@ -116,7 +116,7 @@ nav {
   width: 100%;
   min-height: 500px;
   padding: 5%;
-  background-image: url(berlin.jpg);
+  background-image: url(images/berlin.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -186,7 +186,7 @@ nav {
   width: 100%;
   min-height: 500px;
   padding: 5%;
-  background-image: url(berlin.jpg);
+  background-image: url(images/berlin.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -237,7 +237,7 @@ nav {
 .name1 {
   max-width: 1280px;
   margin: 0 auto;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -246,7 +246,7 @@ nav {
 .name2 {
   max-width: 1280px;
   margin: 0 auto;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
 }
 /* scoller */
@@ -257,7 +257,7 @@ nav {
 .text1 {
   max-width: 1280px;
   margin: 0 auto;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -344,7 +344,7 @@ nav {
 
 .follow-us {
   grid-area: follow-us;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-size: 15px;
   font-weight: bold;
@@ -352,7 +352,7 @@ nav {
 
 .contact-us {
   grid-area: contact-us;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-size: 15px;
   font-weight: bold;
@@ -365,7 +365,7 @@ nav {
 
 .ema {
   grid-area: ema;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 15px;
@@ -374,7 +374,7 @@ nav {
 
 .phonenumber {
   grid-area: phonenumber;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 15px;
@@ -437,7 +437,7 @@ nav {
 /* inpute */
 .itext-1,
 .itext-2 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -446,7 +446,7 @@ nav {
 }
 .namef,
 .namel {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-size: 23px;
 }
@@ -526,14 +526,14 @@ nav {
   transform: translate(30px, 30px);
 }
 .btext1 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
   line-height: 39px;
 }
 .btext2 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-size: 32px;
   line-height: 39px;
@@ -671,7 +671,7 @@ a {
 .Summarytext,
 .Stext-4,
 #bnt {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -684,7 +684,7 @@ a {
 .Stext-7,
 .Stext-8,
 .Stext-9 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-size: 25px;
 }
@@ -701,7 +701,7 @@ a {
 .Stext-14,
 .Stext-10,
 .Stext-5 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
@@ -755,7 +755,9 @@ a {
 }
 
 @media (max-width: 800px) {
-  .text1,.itext-1,.itext-2 {
+  .text1,
+  .itext-1,
+  .itext-2 {
     max-width: 300px;
     font-size: 25px;
   }
@@ -770,8 +772,8 @@ a {
     max-width: 300px;
     grid-template-columns: 300px;
   }
-  .s{
-    grid-template-columns:  150px 150px;
+  .s {
+    grid-template-columns: 150px 150px;
     max-width: 350px;
   }
   .Stext-1,
@@ -793,10 +795,10 @@ a {
   .Stext-13,
   .Stext-14,
   .Stext-10,
-  .Stext-5{
+  .Stext-5 {
     font-size: 20px;
   }
-  #bnt{
+  #bnt {
     font-size: 10px;
   }
 }
