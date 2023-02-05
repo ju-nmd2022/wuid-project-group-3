@@ -37,3 +37,13 @@ dropdowns.forEach((dropdown) => {
   });
 });
 
+
+// Haiying's js code
+const btn_for_scrolling = document.getElementById("btn-for-scrolling")
+function scrolling (){ 
+  window.scrollTo({
+    top:0,
+    behavior:"smooth"
+  })
+}
+btn_for_scrolling.addEventListener("click", scrolling );
