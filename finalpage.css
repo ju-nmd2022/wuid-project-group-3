@@ -513,7 +513,7 @@ a {
   display: grid;
   grid-auto-columns: 1fr;
   grid-template-columns: 400px 200px;
-  grid-template-rows: 50px 70px 50px 50px 50px 70px 50px 50px 50px 30px 70px 50px 50px 70px 50px 30px;
+  grid-template-rows: 50px 70px 50px 50px 50px 70px 50px 50px 50px 30px 70px 50px 50px 50px 70px 50px 30px;
   gap: 10px 10px;
   grid-template-areas:
     " . ."
@@ -533,6 +533,7 @@ a {
     " Stext-7 price1"
     " Stext-8 price2"
     " Stext-9 price3"
+    " pressText pressDiscount"
     " bnt ."
     " . .";
   justify-items: stretch;
@@ -636,6 +637,8 @@ a {
 .price1,
 .price2,
 .price3,
+.pressText,
+.pressDiscount,
 .Stext-11,
 .Stext-12,
 .Stext-13,
@@ -653,7 +656,9 @@ a {
 .date-3,
 .price1,
 .price2,
-.price3 {
+.price3,
+.pressText,
+.pressDiscount {
   text-align: right;
 }
 
@@ -731,6 +736,8 @@ a {
   .price1,
   .price2,
   .price3,
+  .pressText,
+  .pressDiscount,
   .Stext-11,
   .Stext-12,
   .Stext-13,
@@ -842,4 +849,15 @@ a {
   .phonenumber {
     font-size: 14px;
   }
+}
+
+.writeDiscount {
+  grid-area: pressText;
+  height: 50px;
+  width: 200px;
+}
+.submit {
+  grid-area: pressDiscount;
+  height: 50px;
+  width: 150px;
 }
