@@ -851,6 +851,7 @@ a {
   }
 }
 
+<<<<<<< HEAD
 .writeDiscount {
   grid-area: pressText;
   height: 50px;
@@ -861,3 +862,22 @@ a {
   height: 50px;
   width: 150px;
 }
+=======
+
+/* setting up style of button */
+#btn-for-scrolling{
+  position: fixed;
+  right: 5%;
+  bottom: 13%;
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  border: none;
+  transition: 0.25s;
+  cursor: pointer;
+}
+#btn-for-scrolling:hover{
+  box-shadow:0 0 10px var(--dark);
+}
+>>>>>>> 7b0cd875e535f67622bba433faf42fef43d648de

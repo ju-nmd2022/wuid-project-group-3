@@ -18,10 +18,16 @@ X.onclick = function () {
   window.location.replace("index.html");
 };
 
-let back = document.getElementById("back");
-back.onclick = function () {
-  window.location.replace("index.html");
-};
+// Haiying's js code
+const btn_for_scrolling = document.getElementById("btn-for-scrolling")
+function scrolling (){ 
+  window.scrollTo({
+    top:0,
+    behavior:"smooth"
+  })
+}
+btn_for_scrolling.addEventListener("click", scrolling );
+
 
 ////////Frej's Discount Code Javascript! Everything Under + line 12 + 13.
 ////////
