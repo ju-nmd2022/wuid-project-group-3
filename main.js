@@ -40,10 +40,23 @@ dropdowns.forEach((dropdown) => {
 
 // Haiying's js code
 const btn_for_scrolling = document.getElementById("btn-for-scrolling")
+
 function scrolling (){ 
   window.scrollTo({
     top:0,
     behavior:"smooth"
   })
 }
+
+function condition(){
+  let Distance_to_top = document.documentElement.scrollTop;
+  if(Distance_to_top<250){
+    btn_for_scrolling.style.display="none"
+  }
+  else{
+    btn_for_scrolling.style.display="block"
+  }
+}
+
+window.onscroll = condition;
 btn_for_scrolling.addEventListener("click", scrolling );
