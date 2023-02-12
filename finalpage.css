@@ -864,6 +864,7 @@ a {
 
 /* setting up style of button */
 #btn-for-scrolling {
+  z-index: 2;
   display: none;
   position: fixed;
   right: 5%;
@@ -877,5 +878,8 @@ a {
   cursor: pointer;
 }
 #btn-for-scrolling:hover {
-  box-shadow: 0 0 10px var(--dark);
+  box-shadow: 0px 0px 10px var(--dark);
+}
+#btn-for-scrolling:active{
+  background-color: var(--dark);
 }

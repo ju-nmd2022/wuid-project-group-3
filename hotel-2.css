@@ -166,7 +166,7 @@ li {
 
 /*Scroll for pictures "Hotel specific pictures */
 
-.media-scroller-3 {
+/* .media-scroller-3 {
   display: flex;
   gap: var(--spacer);
   grid-auto-flow: column;
@@ -192,7 +192,7 @@ li {
   height: 200px;
   object-fit: cover;
   border-radius: 5px;
-}
+} */
 .media-element {
   display: flex;
   justify-content: center;
@@ -621,6 +621,7 @@ h3 {
 
 /* setting up style of button */
 #btn-for-scrolling{
+  z-index: 2;
   display: none;
   position: fixed;
   right: 5%;
@@ -634,5 +635,8 @@ h3 {
   cursor: pointer;
 }
 #btn-for-scrolling:hover{
-  box-shadow:0 0 10px var(--dark);
+  box-shadow:0px 0px 10px var(--dark);
+}
+#btn-for-scrolling:active{
+  background-color: var(--dark);
 }
